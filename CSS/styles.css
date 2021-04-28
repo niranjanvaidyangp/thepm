@@ -1,3 +1,19 @@
 body {
   background-color:#f2f2f2;
 }
+a:hover
+{background-color:#828685;}
+
+div {background-color:#1A9A96;}
+div a
+ {color: white;font-size: 20px;display: inline-block;padding: 10px;text-decoration: none;}
+
+.active {border-bottom: 8px solid #4A4745;}
+
+h1 {font-family:cursive;text-align: center;}
+
+input[type=submit]:hover{background-color:  #45a049;}
+input[type=submit]{width:auto;;background-color: #4CAF50;color: white;padding: 14px 20px;margin: 8px 0;  border: none;border-radius: 4px;cursor: pointer;}
+
+input[type=text], select {width:auto;padding: 08px 15px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;}
+input[type=Email], select {width:auto;padding: 08px 15px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;}
