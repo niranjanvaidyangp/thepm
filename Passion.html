@@ -2,10 +2,150 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Niranjan V PMP</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
-Travel with me
+  <h1 style="color:#1A9A96" ;"> NIRANJAN VAIDYA </h1>
 
-  </body>
+  <body style="font-family:Century Gothic">
+    <hr size="4" noshade>
+    <ul>
+      <div>
+        <li> <a  href="index.html"> Home </a></li>
+        <li> <a href="Aboutme.html"> About me</a></li>
+        <li> <a href="Blog.html"> Blog </a></li>
+        <li> <a href="Contact.html">Contact me</a></li>
+        <li class="dropdown" >
+          <a href="javascript:void(0)" class="dropbtn"> Others</a>
+          <div class="dropdown-content" >
+            <a href="Passion.html" > Travel with me  </a>
+            <!--  <a href="#"> Tech Talks </a> -->
+          </div>
+      </div>
+      </li>
+    </ul>
+      <hr size="4" noshade>
+<br>
+
+This page is under construction and additional contents will be added soon.
+If you want to share the photos of your city, feel free to connect with me.
+<style>
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center"> Memories </h2>
+
+<p> Tokyo, Japan 2019 </p>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="Image/2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Image/3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Image/4.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<p> Dubai 2018 </p>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="Image/10.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="Image/11.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="Image/12.jpg" style="width:100%">
+  </div>
+  <div class="mySlides2">
+    <img src="Image/13.jpg" style="width:100%">
+  </div>
+  <div class="mySlides2">
+    <img src="Image/14.jpg" style="width:100%">
+  </div>
+  <div class="mySlides2">
+    <img src="Image/15.jpg" style="width:100%">
+  </div>
+  <div class="mySlides2">
+    <img src="Image/16.jpg" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}
+</script>
+
+
+
+
+</body>
+
 </html>
